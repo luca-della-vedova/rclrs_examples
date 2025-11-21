@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 # TODO(luca) change this to the correct version once dynamic message support is released on crates.io
-rclrs = { version = "0.4", features = ["dyn_msg"] }
+rclrs = { git = "https://github.com/luca-della-vedova/ros2_rust", branch = "dynamic_messages" }
 anyhow = {version = "1", features = ["backtrace"]}
