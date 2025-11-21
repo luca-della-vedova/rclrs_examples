@@ -9,7 +9,7 @@ fn main() -> Result<(), Error> {
 
     let worker = node.create_worker::<usize>(0);
     let _subscription = worker.create_dynamic_subscription(
-        "rclrs_example_msgs/msg/VariousTypes".try_into()?,
+        "example_interfaces/msg/String".try_into()?,
         "topic",
         move |num_messages: &mut usize, msg, _msg_info| {
             *num_messages += 1;
